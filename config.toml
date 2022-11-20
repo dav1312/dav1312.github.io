@@ -35,22 +35,26 @@ title = "Stockfish - Open Source Chess Engine"
 [menu]
   # Main Menu
   [[menu.main]]
-    name = "Download"
+    name = "Download Stockfish 15"
+    title = "Download"
     url = "/download/"
       weight = 1
 
   [[menu.main]]
     name = "Get Involved"
+    title = "Get Involved"
     url = "/get-involved/"
       weight = 3
 
   [[menu.main]]
-    name = "Blog"
+    name = "Stockfish Blog"
+    title = "Blog"
     url = "/blog/"
       weight = 4
 
   [[menu.main]]
     name = "About"
+    title = "About"
     url = "/about/"
       weight = 5
 
