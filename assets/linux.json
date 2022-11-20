@@ -2,11 +2,13 @@
 	"files": [
 		{
 			"arch": "BMI2",
+			"cpus": "Intel 4th Gen and newer and AMD Zen 3 and newer",
 			"wiki_url": "https://en.wikipedia.org/wiki/Bit_manipulation_instruction_set#Supporting_CPUs",
 			"file": "/files/stockfish_15_linux_x64_bmi2.zip"
 		},
 		{
 			"arch": "AVX2",
+			"cpus": "AMD Zen, Zen+ and Zen 2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2",
 			"file": "/files/stockfish_15_linux_x64_avx2.zip"
 		},

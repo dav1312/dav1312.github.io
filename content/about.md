@@ -3,13 +3,13 @@ title: 'About'
 menu: main
 ---
 
-
 ## Get Notified
 
-Get notified about new releases by [following us on
-Twitter](http://twitter.com/stockfishchess), [liking us on
-Facebook](http://facebook.com/stockfishchess), or [reading our
-blog](/blog/).
+Get notified about new releases by
+following us on [Twitter](http://twitter.com/stockfishchess),
+joining our [Discord](https://discord.gg/GWDRS3kU6R),
+liking us on [Facebook](http://facebook.com/stockfishchess),
+or reading our [blog](/blog/).
 
 ## Engine Authors
 
@@ -29,8 +29,8 @@ chess engine, with frequent updates every few months. Today, it remains
 
 ## About this website
 
-This website was built by [Daylen Yang](http://daylen.com/). The
-Stockfish icon was designed by [Klein Maetschke](http://iamkle.in).
+This website was built by [Daylen Yang](http://daylen.com/) and its source code in on [Github](https://github.com/daylen/stockfish-web).
+The Stockfish icon was designed by [Klein Maetschke](http://iamkle.in).
 
 ## About the GPL
 
