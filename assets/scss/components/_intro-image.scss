@@ -1,13 +1,41 @@
-.intro-image {
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
-  margin-top: -40px;
-  transition: transform 0.5s;
-}
+  height: 100%;
+  position: relative;
+  .image-bg {
+    background: linear-gradient(45deg, $green7 0%, $green7 100%) top left,
+                linear-gradient(-45deg, $green1 0%, $green1 100%) top right,
+                linear-gradient(-135deg, $green4 0%, $green4 100%) bottom right,
+                linear-gradient(135deg, $green1 0%, $green1 100%) bottom left !important;
+    background-size: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    filter: blur(68px);
+    transform: translate(-50%, -50%);
+  }
 
-.intro-image:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s;
+  .intro-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+  }
 }
 
 .intro-image-absolute {
