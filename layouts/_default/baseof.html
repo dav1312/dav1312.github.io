@@ -63,6 +63,8 @@
   {{ $macos_json_link := $macos_json.RelPermalink }}
   {{ $arm_json := resources.Get "arm.json" }}
   {{ $arm_json_link := $arm_json.RelPermalink }}
+  {{ $arm_json := resources.Get "assets.json" }}
+  {{ $arm_json_link := $arm_json.RelPermalink }}
 
   {{ block "footer_js" . }}
   {{ end }}

@@ -27,9 +27,11 @@ function getFastAndSlow(json, old_windows) {
     return [fast, slow];
 }
 
-const baseDownloadLink = "https://github.com/official-stockfish/Stockfish/releases/latest/download/";
-
+const baseDownloadLink = "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-";
 const windowsTable = document.getElementById('windows-table');
+const linuxTable = document.getElementById('linux-table');
+const armTable = document.getElementById('arm-table');
+
 if (windowsTable) {
     fetch('/windows.json?a').then(response => response.json()).then(data => {
         const fast_and_slow = getFastAndSlow(data, isOldWindows());
@@ -40,7 +42,6 @@ if (windowsTable) {
     })
 }
 
-const linuxTable = document.getElementById('linux-table');
 if (linuxTable) {
     fetch('/linux.json?a').then(response => response.json()).then(data => {
         const fastFile = data.files.find(file => file.tags && file.tags.includes('fast'));
@@ -52,7 +53,6 @@ if (linuxTable) {
     })
 }
 
-const armTable = document.getElementById('arm-table');
 if (armTable) {
     fetch('/arm.json?a').then(response => response.json()).then(data => {
         const fastFile = data.files.find(file => file.tags && file.tags.includes('fast'));

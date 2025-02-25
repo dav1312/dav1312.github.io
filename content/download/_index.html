@@ -9,63 +9,120 @@ aliases:
     <p><b>Note:</b> Stockfish is a <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html#executing-stockfish-opens-a-cmd-window">command line program</a>. You may want to use it in your own <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#download-a-chess-gui">chess GUI</a>.</p>
 </blockquote>
 
-<h2>Windows</h2>
-<table id="windows-table">
-    <tr>
-        <td><b>⚡️ Faster</b>: Works on modern computers. </td>
-        <td><a href="#" class="radius success button fast">Download (<span></span>)</a></td>
-    </tr>
-    <tr>
-        <td><b>🐢 More compatible</b>: Is a bit slower, but works on the vast majority of computers. </td>
-        <td><a href="#" class="radius success button compat">Download (<span></span>)</a></td>
-    </tr>
-</table>
-<p>
-    If you're looking for binaries for a specific CPU architecture, 
-    <a href="/download/windows">see all Windows binaries</a>.
-    <br>
-    For computers with more than 64 threads, consult the 
-    <a href="https://github.com/official-stockfish/Stockfish/wiki/UCI-&-Commands#setoption">NumaPolicy documentation</a>
-    for optimal settings.
-</p>
-<h2>ARM / Android</h2>
-<table id="arm-table">
-    <tr>
-        <td><b>⚡️ Faster</b>: Works on most devices.</td>
-        <td><a href="#" class="radius success button fast">Download (<span></span>)</a></td>
-    </tr>
-    <tr>
-        <td><b>🐢 More compatible</b>: Is slower, but works on older devices.</td>
-        <td><a href="#" class="radius success button compat">Download (<span></span>)</a></td>
-    </tr>
-</table>
-<p>If you're looking for binaries for a specific CPU architecture, <a href="/download/arm">see all ARM binaries</a></p>
+<div class="row">
+  <div class="col-md-12 mb-2 px-1">
+    <div class="card h-100 overflow-hidden rounded-lg border-success">
+      <div class="card-header">
+        <span class="fs-5 font-weight-bold">Windows</span>
+        <span class="badge badge-success">Recommended</span>
+      </div>
+      <div class="card-body py-0">
+        <div class="download-item py-1 border-bottom d-flex justify-content-between align-items-center">
+          <div>
+            <strong>AVX2</strong>
+            <div class="text-muted">Recommended for most users</div>
+          </div>
+          <a href="https://github.com/official-stockfish/Stockfish/releases/download/latest/stockfish-windows-x86-64-avx2.zip" class="rounded button">Download</a>
+        </div>
+        <div class="remaining-items hidden">
+          <div class="download-item py-1 border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <strong>VNNI512</strong>
+            </div>
+            <a href="https://github.com/official-stockfish/Stockfish/releases/download/latest/stockfish-windows-x86-64-vnni512.zip" class="rounded button">Download</a>
+          </div>
+        </div>
+        <button class="show-more btn btn-link w-100 py-1 text-center">Show more options</button>
+      </div>
+      <div class="card-footer text-muted">
+        <div><strong>Note for systems with more than 64 threads:</strong> Consider setting <code>NumaPolicy</code> to <code>hardware</code>.</div>
+        <div>Read more about NUMA configuration in the <a href="#" class="official-doc">official documentation</a>.</div>
+      </div>
+    </div>
+  </div>
 
-<h2>macOS</h2>
-<p>The easiest way to get started is with the Stockfish app:<br />
-<a href="https://itunes.apple.com/us/app/stockfish/id801463932?ls=1&mt=12"><img src="/svg/mac-app-store.svg" width="240px" class="sfm-store-button"></a>
-</p>
-<p>If you want the engine only, you can get it through <a href="https://brew.sh">Homebrew</a>:
-<code>brew install stockfish</code></p>
-<p>If you're looking for binaries for a specific CPU architecture, <a href="/download/macos">see all MacOS binaries</a></p>
+  <div class="col-md-6 mb-2 px-1">
+    <div class="card h-100 overflow-hidden rounded-lg">
+      <div class="card-header fs-5 font-weight-bold">ARM</div>
+      <div class="card-body py-0">
+        <div class="download-item py-1 border-bottom d-flex justify-content-between align-items-center">
+          <div>
+            <strong>ARMv8</strong>
+          </div>
+          <a href="https://github.com/official-stockfish/Stockfish/releases/download/sf_17/stockfish-android-armv8.tar" class="rounded button">Download</a>
+        </div>
+        <button class="show-more btn btn-link w-100 py-1 text-center">Show more options</button>
+      </div>
+    </div>
+  </div>
 
-<h2>iOS</h2>
-<p>One app that we recommend is SmallFish:<br />
-<a href="https://itunes.apple.com/us/app/smallfish-chess-for-iphone/id675049147?mt=8"><img src="/svg/app-store.svg" width="200px" class="sfm-store-button"></a>
-</p>
+  <div class="col-md-6 mb-2 px-1">
+    <div class="card h-100 overflow-hidden rounded-lg">
+      <div class="card-header fs-5 font-weight-bold">Linux</div>
+      <div class="card-body py-0">
+        <div class="download-item py-1 border-bottom d-flex justify-content-between align-items-center">
+          <div>
+            <strong>AVX2</strong>
+          </div>
+          <a href="https://github.com/official-stockfish/Stockfish/releases/download/sf_17/stockfish-ubuntu-x86-64-avx2.tar" class="rounded button">Download</a>
+        </div>
+        <button class="show-more btn btn-link w-100 py-1 text-center">Show more options</button>
+      </div>
+    </div>
+  </div>
 
-<h2>Linux</h2>
-<table id="linux-table">
-    <tr>
-        <td><b>⚡️ Faster</b>: Works on modern computers. </td>
-        <td><a href="#" class="radius success button fast">Download (<span></span>)</a></td>
-    </tr>
-    <tr>
-        <td><b>🐢 More compatible</b>: Is a bit slower, but works on the vast majority of computers. </td>
-        <td><a href="#" class="radius success button compat">Download (<span></span>)</a></td>
-    </tr>
-</table>
-<p>If you're looking for binaries for a specific CPU architecture, <a href="/download/linux">see all Linux binaries</a></p>
+  <div class="col-md-6 mb-2 px-1">
+    <div class="card h-100 overflow-hidden rounded-lg">
+      <div class="card-header fs-5 font-weight-bold">macOS</div>
+      <div class="card-body py-0">
+        <div class="download-item py-1 border-bottom d-flex justify-content-between align-items-center">
+          <div>
+            <strong>Apple Silicon</strong>
+          </div>
+          <a href="https://github.com/official-stockfish/Stockfish/releases/download/sf_17/stockfish-macos-m1-apple-silicon.tar" class="rounded button">Download</a>
+        </div>
+        <button class="show-more btn btn-link w-100 py-1 text-center">Show more options</button>
+      </div>
+      <div class="card-footer">
+        Alternative methods:
+      </div>
+      <div class="card-body py-0">
+        <div class="download-item py-1 border-bottom d-flex align-items-center">
+          <div class="flex-grow-1">
+            <span>🐟</span>
+            <strong>Stockfish Chess</strong>
+            <div class="text-muted">Recommended macOS App (<a href="https://github.com/daylen/stockfish-mac">GitHub</a>)</div>
+          </div>
+          <a href="https://apps.apple.com/us/app/stockfish-chess/id801463932" class="rounded button">App Store</a>
+        </div>
+        <div class="download-item py-1 border-bottom d-flex align-items-center">
+          <div class="flex-grow-1">
+            <span>🍺</span>
+            <strong>Homebrew</strong>
+            <div class="text-muted">Install via Terminal: <code>brew install stockfish</code></div>
+          </div>
+          <a href="https://formulae.brew.sh/formula/stockfish" class="rounded button">Homebrew</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-2 px-1">
+    <div class="card h-100 overflow-hidden rounded-lg">
+      <div class="card-header fs-5 font-weight-bold">iOS</div>
+      <div class="card-body py-0">
+        <div class="download-item py-1 border-bottom d-flex align-items-center">
+          <div class="flex-grow-1">
+            <span>🐟</span>
+            <strong>SmallFish</strong>
+            <div class="text-muted">Recommended iOS App</div>
+          </div>
+          <a href="#" class="rounded button">App Store</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <hr>
 <h2>Source Code</h2>
